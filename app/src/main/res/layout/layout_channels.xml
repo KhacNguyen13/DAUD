@@ -16,13 +16,14 @@
         app:tint="#888888"
         android:background="?attr/selectableItemBackground"
         android:clickable="true"
-        android:focusable="true" />
+        android:focusable="true"
+        android:contentDescription="@null" />
 
     <TextView
         android:id="@+id/tvMyChannelsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kênh của tôi"
+        android:text="@string/my_channels"
         android:textColor="#333333"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -36,7 +37,7 @@
         android:background="@drawable/bg_button_outline"
         android:paddingHorizontal="16dp"
         android:paddingVertical="6dp"
-        android:text="Chỉnh sửa"
+        android:text="@string/edit_channels"
         android:textColor="#333333"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/tvMyChannelsTitle" />
@@ -46,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Nhấn và giữ để di chuyển hoặc xóa kênh"
+        android:text="@string/channels_desc"
         android:textColor="#888888"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,11 +71,11 @@
                 android:layout_height="wrap_content"
                 android:columnCount="4">
 
-                <TextView android:id="@+id/chanTrangChu" style="@style/ChannelItem" android:text="Trang chủ" android:textColor="#888888" android:clickable="true" android:focusable="true" />
-                <TextView android:id="@+id/chanBongDa" style="@style/ChannelItem" android:text="Bóng đá" android:textColor="#D32F2F" android:clickable="true" android:focusable="true" />
-                <TextView android:id="@+id/chanXaHoi" style="@style/ChannelItem" android:text="Xã hội" android:clickable="true" android:focusable="true" />
-                <TextView android:id="@+id/chanGiaiTri" style="@style/ChannelItem" android:text="Giải trí" android:clickable="true" android:focusable="true" />
-                <TextView android:id="@+id/chanTheGioi" style="@style/ChannelItem" android:text="Thế giới" android:clickable="true" android:focusable="true" />
+                <TextView android:id="@+id/chanTrangChu" style="@style/ChannelItem" android:text="@string/tab_home" android:textColor="#888888" android:clickable="true" android:focusable="true" />
+                <TextView android:id="@+id/chanBongDa" style="@style/ChannelItem" android:text="@string/tab_football" android:textColor="#D32F2F" android:clickable="true" android:focusable="true" />
+                <TextView android:id="@+id/chanXaHoi" style="@style/ChannelItem" android:text="@string/tab_social" android:clickable="true" android:focusable="true" />
+                <TextView android:id="@+id/chanGiaiTri" style="@style/ChannelItem" android:text="@string/tab_entertainment" android:clickable="true" android:focusable="true" />
+                <TextView android:id="@+id/chanTheGioi" style="@style/ChannelItem" android:text="@string/tab_world" android:clickable="true" android:focusable="true" />
                 <TextView android:id="@+id/chanKinhTe" style="@style/ChannelItem" android:text="Kinh tế" android:clickable="true" android:focusable="true" />
                 <TextView android:id="@+id/chanCongNghe" style="@style/ChannelItem" android:text="Công nghệ" android:clickable="true" android:focusable="true" />
                 <TextView android:id="@+id/chanThoiTrang" style="@style/ChannelItem" android:text="Thời trang" android:clickable="true" android:focusable="true" />
@@ -97,7 +98,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="Kênh đề xuất"
+                android:text="@string/recommended_channels"
                 android:textColor="#333333"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -107,7 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Nhấn để thêm vào Kênh của tôi"
+                android:text="@string/add_channels_hint"
                 android:textColor="#888888"
                 android:textSize="14sp" />
 
