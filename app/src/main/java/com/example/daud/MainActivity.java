@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
             rootProfile.findViewById(R.id.btnNightMode).setOnClickListener(v -> toggleNightMode());
             rootProfile.findViewById(R.id.btnMenuLuu).setOnClickListener(v -> startActivity(new Intent(this, SavedArticlesActivity.class).putExtra("nightMode", isNightMode)));
             rootProfile.findViewById(R.id.btnMenuLichSu).setOnClickListener(v -> startActivity(new Intent(this, HistoryActivity.class).putExtra("nightMode", isNightMode)));
-            
+
             rootProfile.findViewById(R.id.loginHeader).setOnClickListener(v -> {
                 SharedPreferences pref = getSharedPreferences("UserPrefs", MODE_PRIVATE);
                 if (!pref.getBoolean("isLoggedIn", false)) {
@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
             tvUserSubStatus.setText("@" + username);
             btnLogout.setVisibility(View.VISIBLE);
             ivUserAvatar.setColorFilter(Color.RED);
-            
+
             if (isAdmin) {
                 btnAdminPanel.setVisibility(View.VISIBLE);
                 dividerAdmin.setVisibility(View.VISIBLE);
@@ -273,13 +273,15 @@ public class MainActivity extends AppCompatActivity {
         // Update other text colors in profile
         int[] textIds = {R.id.tvTheoDoi, R.id.tvThongBao, R.id.menuLuu, R.id.menuLichSu,
                 R.id.menuPhanHoi, R.id.menuCaiDat, R.id.tvFooterName, R.id.tvUserStatus, R.id.menuAdmin};
+                R.id.menuPhanHoi, R.id.menuCaiDat, R.id.tvFooterName};
         for (int id : textIds) {
             TextView tv = findViewById(id);
             if (tv != null) tv.setTextColor(textColor);
         }
         TextView tvFooterId = findViewById(R.id.tvFooterId);
         if (tvFooterId != null) tvFooterId.setTextColor(secondaryTextColor);
-        
+
+
         TextView tvUserSubStatus = findViewById(R.id.tvUserSubStatus);
         if (tvUserSubStatus != null) tvUserSubStatus.setTextColor(secondaryTextColor);
 

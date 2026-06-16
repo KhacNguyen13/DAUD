@@ -204,6 +204,9 @@
             <TextView android:id="@+id/menuCaiDat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cài đặt" android:layout_marginStart="20dp" android:textSize="16sp" android:textColor="#333333" />
         </LinearLayout>
 
+        <!-- Banner Ad -->
+        <ImageView android:layout_width="match_parent" android:layout_height="220dp" android:layout_margin="16dp" android:scaleType="centerCrop" android:src="@android:drawable/presence_video_online" />
+
         <!-- Footer -->
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
             <TextView android:id="@+id/tvFooterName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CÔNG TY TNHH CÔNG NGHỆ MẠNG THÔNG TIN VIỆT NAM" android:textStyle="bold" android:textColor="#333333" android:textSize="14sp" />
